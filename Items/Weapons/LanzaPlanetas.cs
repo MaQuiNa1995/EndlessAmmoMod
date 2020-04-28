@@ -17,6 +17,7 @@ namespace FirstMod.Items.Weapons
         public override void SetDefaults()
         {
             item.damage = 80;
+            item.crit = 19;
             item.magic = true;                     //this make the item do magic damage
             item.width = 24;
             item.height = 28;
@@ -27,11 +28,11 @@ namespace FirstMod.Items.Weapons
             item.knockBack = 2;
             item.value = 1000;
             item.rare = 3;
-            item.mana = 8;             //mana use
-            item.UseSound = SoundID.Item21;            //this is the sound when you use the item
+            item.mana = 20;             //mana use
+            item.UseSound = SoundID.Item20;            //this is the sound when you use the item
             item.autoReuse = true;
             item.shoot = mod.ProjectileType("Planeta");  //this make the item shoot your projectile
-            item.shootSpeed = 9f;    //projectile speed when shoot
+            item.shootSpeed = 15f;    //projectile speed when shoot
         }
     }
 }
