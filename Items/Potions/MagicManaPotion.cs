@@ -26,16 +26,15 @@ namespace FirstMod.Items.Potions
             item.useAnimation = 17;
             item.useTime = 17;
             item.maxStack = 1;                 //this is where you set the max stack of item
-            
             item.width = 20;
             item.height = 28;
             item.value = 100;
             item.rare = 3;
             item.healMana = 400;
             item.consumable = false;           //this make that the item is consumable when used
-            //item.buffType = mod.BuffType("BorracheraMagica");    //this is where you put your Buff name
-            //item.buffTime = 2500;    //this is the buff duration        20000 = 6 min
-            // item.buffTime = 1000;
+            item.buffType = mod.BuffType("BorracheraMagica");    //this is where you put your Buff name
+            item.buffTime = 2500;    //this is the buff duration        20000 = 6 min
+            item.buffTime = 1000;
 
             return;
         }
