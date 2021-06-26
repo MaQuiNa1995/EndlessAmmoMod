@@ -1,14 +1,15 @@
+
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace FirstMod.Items
+namespace MaQuiMod.Items.Ammo.Ranged
 {
-	public class GelMagico : ModItem
+	public class UnlimintedGel : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Gel Magico");
-			Tooltip.SetDefault("Municion de tipo gel infinito");
+			Tooltip.SetDefault("Munición gel infinita");
 		}
 
 		public override void SetDefaults()
@@ -30,8 +31,8 @@ namespace FirstMod.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 1);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddIngredient(ItemID.Gel, 3996);
+			recipe.AddTile(TileID.CrystalBall);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

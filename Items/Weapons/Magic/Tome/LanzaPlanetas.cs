@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace FirstMod.Items.Weapons
+namespace MaQuiMod.Items.Weapons.Magic.Tome
 {
     public class LanzaPlanetas : ModItem
     {
@@ -23,12 +23,12 @@ namespace FirstMod.Items.Weapons
             item.height = 28;
             item.useTime = 30;
             item.useAnimation = 30;
-            item.useStyle = 5;        //this is how the item is holded
+            item.useStyle = ItemUseStyleID.SwingThrow;        //this is how the item is holded
             item.noMelee = true;
             item.knockBack = 2;
             item.value = 1000;
-            item.rare = 3;
-            item.mana = 20;             //mana use
+            item.rare =ItemRarityID.Orange;
+            item.mana = 9;             //mana use
             item.UseSound = SoundID.Item20;            //this is the sound when you use the item
             item.autoReuse = true;
             item.shoot = mod.ProjectileType("Planeta");  //this make the item shoot your projectile

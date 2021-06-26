@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IL.Terraria.GameContent.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,9 +8,9 @@ using System.Threading.Tasks;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace FirstMod.Items
+namespace MaQuiMod.Items.Ammo.Ranged
 {
-	public class EstrellaProtones : ModItem
+	public class ProtonStar : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
@@ -24,7 +25,7 @@ namespace FirstMod.Items
 			item.consumable = false;
 			item.knockBack = -1.5f;
 			item.value = 5;
-			item.rare = 3;
+			item.rare = ItemRarityID.Orange;
 			item.shoot = mod.ProjectileType("FallenStar");
 			item.shootSpeed = 1f;
 			item.ammo = AmmoID.FallenStar;
@@ -33,9 +34,8 @@ namespace FirstMod.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.FallenStar, 1);
-			// recipe.AddTile(TileID.CrystalBall);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddIngredient(ItemID.FallenStar, 999);
+			recipe.AddTile(TileID.CrystalBall);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

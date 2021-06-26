@@ -1,3 +1,3 @@
+displayName = QOL: Maqui
 author = MaQuiNa1995
 version = 0.1
-displayName = Dummy Mod
