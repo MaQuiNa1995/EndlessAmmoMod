@@ -4,5 +4,6 @@ namespace MaquiMod
 {
 	public class MaquiMod : Mod
 	{
+
 	}
 }

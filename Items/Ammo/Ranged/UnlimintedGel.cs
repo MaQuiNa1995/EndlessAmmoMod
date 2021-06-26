@@ -8,8 +8,8 @@ namespace MaQuiMod.Items.Ammo.Ranged
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Gel Magico");
-			Tooltip.SetDefault("Munición gel infinita");
+			DisplayName.SetDefault("Gel Infinito");
+			Tooltip.SetDefault("Un gel que nunca se acaba para usar de municion");
 		}
 
 		public override void SetDefaults()
@@ -22,7 +22,7 @@ namespace MaQuiMod.Items.Ammo.Ranged
 			item.consumable = false;
 			item.knockBack = -1.5f;
 			item.value = 5;
-			item.rare = 2;
+			item.rare = ItemRarityID.LightPurple;
 			item.shoot = mod.ProjectileType("Gel");
 			item.shootSpeed = 0.01f;
 			item.ammo = AmmoID.Gel;

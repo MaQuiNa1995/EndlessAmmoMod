@@ -23,7 +23,7 @@ namespace MaQuiMod.Items.Weapons.Magic.Tome
             item.height = 28;
             item.useTime = 30;
             item.useAnimation = 30;
-            item.useStyle = ItemUseStyleID.SwingThrow;        //this is how the item is holded
+            item.useStyle = ItemUseStyleID.HoldingOut;        //this is how the item is holded
             item.noMelee = true;
             item.knockBack = 2;
             item.value = 1000;

@@ -15,7 +15,7 @@ namespace MaQuiMod.Items.Ammo.Ranged
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Estrella De Protones");
-			Tooltip.SetDefault("Municion de tipo estrella caida");
+			Tooltip.SetDefault("Una estrella que se autoreplica para ser usada como municion");
 		}
 
 		public override void SetDefaults()
