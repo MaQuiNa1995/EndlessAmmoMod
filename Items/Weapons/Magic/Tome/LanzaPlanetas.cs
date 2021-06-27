@@ -27,7 +27,7 @@ namespace MaQuiMod.Items.Weapons.Magic.Tome
             item.noMelee = true;
             item.knockBack = 2;
             item.value = 1000;
-            item.rare =ItemRarityID.Orange;
+            item.rare = ItemRarityID.Orange;
             item.mana = 9;             //mana use
             item.UseSound = SoundID.Item20;            //this is the sound when you use the item
             item.autoReuse = true;
