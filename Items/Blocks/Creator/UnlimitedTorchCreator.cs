@@ -8,24 +8,20 @@ namespace MaquiMod.Items.Blocks.Creator
 {
     public class UnlimitedTorchCreator : ModItem
     {
+        public override string Texture => "Terraria/Item_" + ItemID.Torch; 
+
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Antorcha Infinita");
-            Tooltip.SetDefault("Esta madera nunca se acaba !!!");
+            Tooltip.SetDefault("Esta antorcha nunca se acaba !!!");
         }
 
         public override void SetDefaults()
         {
-            item.width = 12;
-            item.height = 12;
-            item.maxStack = 1;
-            item.useTurn = true;
-            item.autoReuse = true;
-            item.useAnimation = 15;
-            item.useTime = 10;
-            item.useStyle = ItemUseStyleID.SwingThrow;
+            item.CloneDefaults(ItemID.Torch);
+            item.color = Color.Purple;
             item.consumable = false;
-            item.createTile = TileID.Torches;
+            item.maxStack = 1;
         }
 
         public override void AddRecipes()

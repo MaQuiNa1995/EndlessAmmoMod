@@ -1,10 +1,13 @@
-﻿using Terraria.ID;
+﻿using Microsoft.Xna.Framework;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace MaquiMod.Items.Blocks.Creator
 {
     public class UnlimitedWoodWallCreator : ModItem
     {
+        public override string Texture => "Terraria/Item_" + ItemID.WoodWall;
+
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Pared de Madera Infinita");
@@ -13,16 +16,10 @@ namespace MaquiMod.Items.Blocks.Creator
 
         public override void SetDefaults()
         {
-            item.width = 12;
-            item.height = 12;
+            item.CloneDefaults(ItemID.WoodWall); 
+            item.color = Color.Purple;
             item.maxStack = 1;
-            item.useTurn = true;
-            item.autoReuse = true;
-            item.useAnimation = 15;
-            item.useTime = 1;
-            item.useStyle = ItemUseStyleID.SwingThrow;
             item.consumable = false;
-            item.createWall = 4;
         }
 
         public override void AddRecipes()

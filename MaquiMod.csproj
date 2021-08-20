@@ -16,6 +16,14 @@
     <None Remove="Items\Projectile\**" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Npc\Hostile\Inferno\MaQuiSucubus.cs.deshabilitado" />
+    <None Remove="Npc\Hostile\Sky\HarpyGirl.cs.deshabilitado" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Npc\Hostile\Inferno\MaQuiSucubus.cs.deshabilitado" />
+    <Compile Include="Npc\Hostile\Sky\HarpyGirl.cs.deshabilitado" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
   </ItemGroup>
   <ItemGroup>

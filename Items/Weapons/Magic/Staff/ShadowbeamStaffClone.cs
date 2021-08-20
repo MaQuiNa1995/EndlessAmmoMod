@@ -8,7 +8,7 @@ namespace MaquiMod.Items.Weapons.Magic.Staff
 {
 	class ShadowbeamStaffClone : ModItem
 	{
-		//public override string Texture => "items/Item_" + ItemID.ShadowbeamStaff;
+
 		//D:\Users\MaQuiNa1995\Documents\My Games\Terraria\ModLoader\Mod Sources\MaquiMod\Items\Weapons\Magic\Staff\ShadowbeamStaffClone.png
 		public override void SetStaticDefaults()
 		{

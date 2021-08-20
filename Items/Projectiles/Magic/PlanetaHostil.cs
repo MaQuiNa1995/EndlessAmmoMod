@@ -6,23 +6,22 @@ using Terraria.ModLoader;
 
 namespace MaQuiMod.Items.Projectiles.Magic
 {
-    public class Planeta : ModProjectile
+    public class PlanetaHostil : ModProjectile
     { 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Planeta");
+            DisplayName.SetDefault("Planetoide");
         }
 
         public override void SetDefaults()
         {
             projectile.width = 40;
             projectile.height = 40;
-            projectile.friendly = true;
             projectile.penetrate = -1;                       //this is the projectile penetration
             Main.projFrames[projectile.type] = 4;           //this is projectile frames
-            projectile.hostile = false;
+            projectile.hostile = true;
             projectile.magic = true;                        //this make the projectile do magic damage
-            projectile.tileCollide = true;                 //this make that the projectile does not go thru walls
+            projectile.tileCollide = false;                 //this make that the projectile does not go thru walls
             projectile.ignoreWater = true;
         }
 

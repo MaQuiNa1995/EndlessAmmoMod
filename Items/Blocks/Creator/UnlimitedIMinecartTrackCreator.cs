@@ -8,6 +8,8 @@ namespace MaquiMod.Items.Blocks.Creator
 {
     public class UnlimitedIMinecartTrackCreator : ModItem
     {
+        public override string Texture => "Terraria/Item_" + ItemID.MinecartTrack;
+
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Rail Infinito");
@@ -16,16 +18,10 @@ namespace MaquiMod.Items.Blocks.Creator
 
         public override void SetDefaults()
         {
-            item.width = 12;
-            item.height = 12;
+            item.CloneDefaults(ItemID.MinecartTrack);
+            item.color = Color.Purple;
             item.maxStack = 1;
-            item.useTurn = true;
-            item.autoReuse = true;
-            item.useAnimation = 15;
-            item.useTime = 4;
-            item.useStyle = ItemUseStyleID.SwingThrow;
             item.consumable = false;
-            item.createTile = TileID.MinecartTrack;
         }
 
         public override void AddRecipes()

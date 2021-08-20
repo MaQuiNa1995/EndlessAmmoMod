@@ -1,0 +1,37 @@
+﻿using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace MaquiMod.Npc.Hostile.Sky
+{
+    public class HarpyGirl : ModNPC
+    {
+        public override void SetStaticDefaults()
+        {
+            DisplayName.SetDefault("Mujer Harpia");
+            Main.npcFrameCount[npc.type] = Main.npcFrameCount[NPCID.Harpy]; // Main.npcFrameCount[3];
+        }
+
+        public override void SetDefaults()
+        {
+            npc.CloneDefaults(NPCID.Harpy);
+
+            //npc.damage = 20;
+            //npc.defense = 10;
+            //npc.lifeMax = 150;
+            //npc.HitSound = SoundID.NPCHit1;
+            //npc.DeathSound = SoundID.NPCDeath1;
+            //npc.value = 100;
+            //npc.knockBackResist = 0.75F;
+            //npc.aiStyle = 14;
+            //aiType = NPCID.Harpy;
+            //animationType = NPCID.Harpy;
+
+        }
+
+        public override float SpawnChance(NPCSpawnInfo spawnInfo)
+        {
+            return SpawnCondition.Sky.Chance * 0.2f;
+        }
+    }
+}
