@@ -26,14 +26,13 @@ namespace MaquiMod.Npc.Hostile.Overworld
             npc.knockBackResist = 0.75F;
 
             npc.aiStyle = 62;
-            aiType = NPCID.Zombie;
+            aiType = NPCID.EyeofCthulhu;
 
         }
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-
-            return (Main.hardMode == true) ? SpawnCondition.OverworldNightMonster.Chance * 0.3f : 0f;
+            return (Main.hardMode == true) ? SpawnCondition.OverworldNightMonster.Chance * 0.1f : 0f;
         }
 
     }

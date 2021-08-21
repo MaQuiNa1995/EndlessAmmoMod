@@ -16,17 +16,6 @@ namespace MaquiMod.Npc.Hostile.Sky
         {
             npc.CloneDefaults(NPCID.Harpy);
 
-            //npc.damage = 20;
-            //npc.defense = 10;
-            //npc.lifeMax = 150;
-            //npc.HitSound = SoundID.NPCHit1;
-            //npc.DeathSound = SoundID.NPCDeath1;
-            //npc.value = 100;
-            //npc.knockBackResist = 0.75F;
-            //npc.aiStyle = 14;
-            //aiType = NPCID.Harpy;
-            //animationType = NPCID.Harpy;
-
         }
 
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
